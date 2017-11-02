@@ -70,8 +70,12 @@ class ArticleCell: UITableViewCell {
         self.commonetLbl?.text = String(format: "%d", model.replyCount!);
         
 //        print("imgsrc:\(model.imgsrc)");
-        self.img?.setImageWithUrl(url: model.imgsrc, placeHolder: "test.png", callBack: { (image) in
-//            print("callback-image:\(image!)");
+//        self.img?.setImageWithUrl(url: model.imgsrc, placeHolder: "test.png", callBack: { (image) in
+////            print("callback-image:\(image!)");
+//        });
+        
+        self.img?.sd_setImage(with: URL(string: model.imgsrc!), placeholderImage: UIImage(named: "test.png"), completed: { (image, error, cacheType, fileUrl) in
+            
         });
     }
     

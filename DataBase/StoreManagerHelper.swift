@@ -10,7 +10,7 @@ import UIKit
 
 class StoreManagerHelper: NSObject {
     //private   let my_FMDatabaseQueue:FMDatabaseQueue = FMDatabaseQueue(path: DataBasePre.getDataBasePath());
-//    let queue:FMDatabaseQueue = FMDatabaseQueue(path: DataBasePre.getDataBasePath());
+    //let queue:FMDatabaseQueue = FMDatabaseQueue(path: DataBasePre.getDataBasePath());
     private static let instance = StoreManagerHelper();
     class func shareInstance() ->StoreManagerHelper {
         return instance;

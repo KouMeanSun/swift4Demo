@@ -3,6 +3,7 @@
 //
 
 #import <CommonCrypto/CommonDigest.h>
-#import "SQLite3.h"
+//#import "SQLite3.h"
 #import "FMDB.h"
+#import "UIImageView+WebCache.h"
 
